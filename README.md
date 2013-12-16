@@ -16,7 +16,7 @@ scraped from the website
 3. Run the sync to pull any changes (for bonus points stick in a weekly cron job): 
 
 <pre>
-$ ./bin/mfpp --dir ~/mfpp
+$ ./bin/mfpp --dir ~/music/mfpp
 Pulling Music For Programming feed from http://musicforprogramming.net/rss.php
 Last modified: 2013-12-12 01:20:00 UTC
 Searching for title: Episode 23: Panda Magic
