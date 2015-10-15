@@ -1,18 +1,22 @@
-*.gem
-*.rbc
-.bundle
-.config
-coverage
-InstalledFiles
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
+# Default ignores for vim editor
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+# Default ignores for emacs editor
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
 
-# YARD artifacts
-.yardoc
-_yardoc
-doc/
+# test harness
+spec/fixtures
+pkg/*
+vendor/bundle
+vendor/cache
+.bundle
+
