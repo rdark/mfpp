@@ -4,7 +4,7 @@ Music For Programming Parser
 
 ## Overview
 
-Quick + Dirty script to parse RSS feed from musicforprogramming.net and pull
+Quick + Dirty script to parse RSS feed from http://musicforprogramming.net and pull
 down any un-downloaded files along with a basic track list for the mix
 scraped from the website
 
@@ -50,12 +50,9 @@ Searching for title: Episode 01: Datassette
 
 ## Help
 
-<pre>
-$ ./bin/mfpp --help
-Options:
-  --url, -u <s>:   Feed URL to use (default: http://musicforprogramming.net/rss.php)
-  --dir, -d <s>:   Directory to store output in
-     --help, -h:   Show this message
-</pre>
-
+    $ ./bin/mfpp --help
+    Options:
+      --url, -u <s>:   Feed URL to use (default: http://musicforprogramming.net/rss.php)
+      --dir, -d <s>:   Directory to store output in
+         --help, -h:   Show this message
 
