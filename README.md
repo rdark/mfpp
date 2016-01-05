@@ -56,3 +56,7 @@ Searching for title: Episode 01: Datassette
       --dir, -d <s>:   Directory to store output in
          --help, -h:   Show this message
 
+## Compatibility
+
+Originally writter using Ruby 1.9.3. Updated dependencies and tested as working
+on 2.2.3 as of 2016/01/05.

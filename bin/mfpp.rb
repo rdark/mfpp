@@ -6,7 +6,7 @@
 #
 # Author: Richard Clark <richard@fohnet.co.uk>
 #
-require 'feedzirra'
+require 'feedjira'
 require 'trollop'
 require 'nokogiri'
 require 'open-uri'
@@ -21,7 +21,7 @@ end
 
 # pull feed (no reasonable errors to rescue available so just use title, assume
 # that we're ok if so)
-feed = Feedzirra::Feed.fetch_and_parse(opts[:url])
+feed = Feedjira::Feed.fetch_and_parse(opts[:url])
 res = feed.title.nil? rescue true
 raise LoadError, "Could not return title from #{opts[:url]}" if res
 # check directory exists
