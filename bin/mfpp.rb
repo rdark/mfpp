@@ -48,8 +48,15 @@ feed.entries.each do |e|
     puts "Opening #{e.url}"
     page = Nokogiri::HTML(open(e.url))
     container = page.css('div.container')[1]
-    content = container.css('div.content')[0]
-    File.open("#{opts[:dir]}/#{txt_fn}", 'w') {|f| f.write(content.text)}
+    content = container.css('div.pad')[0].text
+    tracklist = String.new
+    content.each_line do |line|
+      if line.match(/^[a-zA-Z0-9].*$/)
+        # strip windows line ending
+        tracklist << line.gsub(/\r\n$/, "\n")
+      end
+    end
+    File.open("#{opts[:dir]}/#{txt_fn}", 'w') {|f| f.write(tracklist)}
   end
 end
 
